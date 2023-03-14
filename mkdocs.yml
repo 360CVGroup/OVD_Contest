@@ -12,6 +12,7 @@ nav:
     - Home: index.md
     - Data: data.md
     - News: news.md
+    - Discussions: discussion.md
     - History: history.md
 
 theme: mkdocs    
