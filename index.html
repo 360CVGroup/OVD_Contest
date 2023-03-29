@@ -1,140 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+      <script>
+	// Hack for scrolling window when linking to anchor tag with fixed nav header
+        var shiftWindow = function() { scrollBy(0, -75) };
+        window.addEventListener("hashchange", shiftWindow);
+        function load() { if (window.location.hash) shiftWindow(); }
+      </script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="None">
         <meta name="author" content="David Leon (Dawei Leng)">
         
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>OVD Contest 2023</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+        <link rel="shortcut icon" href="./img/favicon.ico">
+        <title>开放世界目标检测竞赛2023</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/http.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="js/base.js"></script> 
     </head>
 
-    <body class="homepage">
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href=".">OVD Contest 2023</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <body class="homepage ">
 
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="navitem active">
-                                <a href="." class="nav-link">Home</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="data/" class="nav-link">Data</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="news/" class="nav-link">News</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="discussion/" class="nav-link">Discussions</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="history/" class="nav-link">History</a>
-                            </li>
-                        </ul>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+	<div class="container">
+	<a class="navbar-brand" href=".">开放世界目标检测竞赛2023</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+	</button>
 
-                    <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="data/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+	<div class="collapse navbar-collapse">
+          <!-- Main navigation -->
+          <nav class="nav">
+            <ul class="navbar-nav">
+              <li class="active">
+                <a class="nav-link" href=".">Home</a>
+              </li>
+              <li >
+                <a class="nav-link" href="data/">Data</a>
+              </li>
+              <li >
+                <a class="nav-link" href="news/">News</a>
+              </li>
+              <li >
+                <a class="nav-link" href="discussion/">Discussions</a>
+              </li>
+              <li >
+                <a class="nav-link" href="history/">History</a>
+              </li>
+            </ul>
+          </nav>
 
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
-    </div>
+          <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+          </ul>
+	</div>
+	</div>
+      </nav><div id="content" class="container">
+        
+      <div class="row">
+        <div class="col-md-9" role="main">
 
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="1"><a href="#open-vocabulary-detection-contest-2023-" class="nav-link">Open Vocabulary Detection Contest 2023 - 开放世界目标检测竞赛</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#_1" class="nav-link">竞赛目的与意义</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">竞赛组织方</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">竞赛参与者要求</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#_4" class="nav-link">任务设置</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#_5" class="nav-link">奖项设置和奖励方法</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#_6" class="nav-link">主要时间节点</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
-        </ul>
-    </div>
-</div></div>
-                    <div class="col-md-9" role="main">
+    <li class="breadcrumb-item active" aria-current="page">Home</li>
+  </ol>
+</nav>
 
-<h1 id="open-vocabulary-detection-contest-2023-">Open Vocabulary Detection Contest 2023 - 开放世界目标检测竞赛</h1>
+
+<h1 id="open-vocabulary-detection-contest-2023">Open Vocabulary Detection Contest - 开放世界目标检测竞赛 2023</h1>
 <p>hosted by 360 AI Institute</p>
 <h2 id="_1">竞赛目的与意义</h2>
 <p>目标检测是计算机视觉中的核心任务之一。当前主流的目标检测方法主要针对闭集目标开发，在模型开发前期就要求对待检测目标进行类别定义，然后按照“类别定义数据标注监督训练”的流程进行。这一方式可以处理的待检测目标通常限定在几十类以内。但是当需要检测的目标类别增加到几千、万类时，上述方式在数据标注环节上已无法应对。
 开放词集目标检测（Open Vocabulary Detection）提供了解决上述问题的新思路。借助于跨模态模型（CLIP、ALIGN、R2D2等）的泛化能力，OVD可以实现1）对已定义类别的few shot检测；2）对未定义类别的zero-shot检测。有望成为未来目标检测算法开发的新范式。</p>
-<h2 id="_2">竞赛组织方</h2>
-<p>360人工智能研究院成立于2015年，我们聚焦于研发业界领先的计算机视觉、深度自然语言理解、语音语义交互、大规模深度学习、机器人运动等人工智能技术，并应用于智慧物联网（IOT）、智能安全大数据、互联网信息分发、企业数字化、智能汽车等多种场景。
-团队多次在国际大赛中取得优异成绩，承担过国家和北京市多个重点攻关项目，参与建设国家级重点大数据工程实验室，参与建设的安全大脑入选国家新一代人工智能开放创新平台。我们打造的算法和服务，已应用于多条业务线，支持千万级硬件设备，亿级用户，产生的数据量达千亿规模。
-团队多名成员毕业于新加坡国立、清华、北大等国内外知名高校，大多数小伙伴曾任职于微软、百度、阿里等业界知名公司。我们的价值观是“研究业界一流技术，创造产业落地价值”。</p>
-<h2 id="_3">竞赛参与者要求</h2>
+<h2 id="_2">竞赛参与者要求</h2>
 <p>参赛者可以自由组队，每队不限人数；
 每位参赛者只能参加一只队伍；
 初赛和复赛期间，每个队伍限制提交结果的次数各不超过5次；</p>
-<h2 id="_4">任务设置</h2>
+<h2 id="_3">任务设置</h2>
 <p>参赛者将运用OVD相关的方法，对图像中的商品目标进行检测，目标类别有两类：base类和novel类。base类的目标提供少量已标注的训练样本，novel类的目标则没有训练样本。评测分别在base类的验证集和novel类的验证集上进行，评测指标以mAP计算。
 初赛和复赛使用的novel类别没有重复。</p>
-<h2 id="_5">奖项设置和奖励方法</h2>
+<h2 id="_4">奖项设置和奖励方法</h2>
 <ul>
 <li>一等奖：1支参赛队伍，奖金3万元</li>
 <li>二等奖：2支参赛队伍，奖金各1万元</li>
 <li>三等奖：3支参赛队伍，奖金各5千元</li>
 </ul>
-<h2 id="_6">主要时间节点</h2>
+<h2 id="_5">主要时间节点</h2>
 <table>
 <thead>
 <tr>
@@ -168,26 +135,79 @@
 <td>9/22 ~9/24</td>
 </tr>
 </tbody>
-</table></div>
-            </div>
-        </div>
+</table>
+<h2 id="_6">竞赛组织方</h2>
+<p>360人工智能研究院成立于2015年，我们聚焦于研发业界领先的计算机视觉、深度自然语言理解、语音语义交互、大规模深度学习、机器人运动等人工智能技术，并应用于智慧物联网（IOT）、智能安全大数据、互联网信息分发、企业数字化、智能汽车等多种场景。
+团队多次在国际大赛中取得优异成绩，承担过国家和北京市多个重点攻关项目，参与建设国家级重点大数据工程实验室，参与建设的安全大脑入选国家新一代人工智能开放创新平台。我们打造的算法和服务，已应用于多条业务线，支持千万级硬件设备，亿级用户，产生的数据量达千亿规模。
+团队多名成员毕业于新加坡国立、清华、北大等国内外知名高校，大多数小伙伴曾任职于微软、百度、阿里等业界知名公司。我们的价值观是“研究业界一流技术，创造产业落地价值”。</p>
 
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>
-            var base_url = ".",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="js/base.js" defer></script>
-        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
+<ul class="metadata page-metadata" data-bi-name="page info" lang="en-us" dir="ltr">
+  <li class="last-updated-holder displayDate loading">
+    <span class="last-updated-text">Last updated:</span>
+    <time role="presentation" datetime="2018-10-25T00:00:00.000Z" data-article-date-source="ms.date"></time>
+  </li>
+<!--
+  <li class="readingTime">
+    2 minutes to read
+  </li>
+-->
+  <li class="contributors-holder">
+    <span class="contributors-text">Contributors</span>
+    <ul class="contributors" data-bi-name="contributors"></ul>
+  </li>
+</ul>
+</div>
+        <div class="col-md-3"><div class="navbar-light navbar-expand-md hidden-print sticky-top sticky-offset" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
 
-        <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div id="toc-collapse" class="navbar-collapse collapse card">
+        <ul class="nav flex-column bs-sidenav">
+            <li class="nav-item main"><a class="nav-link" href="#open-vocabulary-detection-contest-2023">Open Vocabulary Detection Contest - 开放世界目标检测竞赛 2023</a></li>
+                <li class="nav-item">
+                    <a href="#_1" class="nav-link">竞赛目的与意义</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#_2" class="nav-link">竞赛参与者要求</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#_3" class="nav-link">任务设置</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#_4" class="nav-link">奖项设置和奖励方法</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#_5" class="nav-link">主要时间节点</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#_6" class="nav-link">竞赛组织方</a>
+                </li>
+        </ul>
+    </div>
+</div></div>
+      </div>
+      </div>
+
+      <footer class="col-md-12">
+	<hr>
+	<div class="container">
+	</div>
+      </footer>
+      <script>
+	var base_url = ".",
+            shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+      </script>
+      <script src="js/base.js" defer></script>
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
+
+      <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <p class="h4 modal-title">Keyboard Shortcuts</p>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
             </div>
             <div class="modal-body">
@@ -229,5 +249,5 @@
 
 <!--
 MkDocs version : 1.4.2
-Build Date UTC : 2023-03-29 07:48:48.947640+00:00
+Build Date UTC : 2023-03-29 08:05:07.246873+00:00
 -->
