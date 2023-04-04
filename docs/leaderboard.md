@@ -10,7 +10,6 @@ hosted by 360 AI Institute
 ## 结果上传
 *S3 post link*     
 *提交的数据格式说明及校验脚本*(*.json)
-*提交的数据格式说明及校验脚本*(*.json)
 
 
 ---
