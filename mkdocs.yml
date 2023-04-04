@@ -9,15 +9,19 @@ extra_javascript:
     - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 nav:
-    - Home: index.md
-    - Data: data.md
-    - News: news.md
-    - Discussions: discussion.md
-    - History: history.md
+    - 赛题介绍: index.md
+    - 数据下载: data.md
+    - Leaderboard: leaderboard.md
 
 theme: 
-    name: bootstrap4
-# theme: windmill    
+   # name: bootstrap4
+   name: mkdocs
+   nav_style: dark
+   analytics:
+     gtag: G-362080214
+
 
 plugins:
   - git-revision-date-localized:
+  - search:
+      separator: '[\s\-\.]+'

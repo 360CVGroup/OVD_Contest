@@ -1,3 +1,12 @@
 
-# Open Vocabulary Detection Contest 2023
+# Open Vocabulary Detection Contest - 开放世界目标检测竞赛 2023
 hosted by 360 AI Institute
+
+---
+## 数据说明
+*竞赛数据说明，其中要说明数据将以邮件的形式发送链接到参赛者邮箱*
+
+
+## 参赛注册
+*使用麦客表单*
+*注册信息包括：参赛队伍信息 以及用于 验证结果提交的验证码，验证码需要提醒参赛者保存*
