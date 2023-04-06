@@ -15,6 +15,7 @@ hosted by 360 AI Institute
 ---
 ## 竞赛动态
 *news*
+*news*
 
 ---
 ## 社区讨论和答疑
