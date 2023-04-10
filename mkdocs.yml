@@ -12,11 +12,14 @@ nav:
     - 赛题介绍: index.md
     - 数据下载: data.md
     - Leaderboard: leaderboard.md
+    - 结果上传: /resources/dataupload.html
+    
 
 theme: 
    # name: bootstrap4
    name: mkdocs
    nav_style: dark
+   custom_dir: docs/resources/
    analytics:
      gtag: G-362080214
 
