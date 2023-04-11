@@ -14,8 +14,7 @@ hosted by 360 AI Institute
 
 1. 初赛数据集下载文件为：data_pre_contest.zip，包括：
 
-    ./train：训练集对应的图片
-
+    ./train：训练集对应的图片  
     ./train.json：训练集对应的标注信息，参照coco格式
 
         json文件中包含3个字段，分别为annotations, images, categories
@@ -29,8 +28,7 @@ hosted by 360 AI Institute
             - ...
             - {'id': 233, 'supercategory': '', 'name': '女士丝巾', 'split': 'seen'}
 
-    ./test：测试集对应的图片
-
+    ./test：测试集对应的图片  
     ./test.json：测试集对应的图像信息和类别汇总，参照coco格式
 
         json文件中包含2个字段，分别为images, categories
@@ -48,9 +46,10 @@ hosted by 360 AI Institute
     
 
 ## 参赛注册
-*使用麦客表单*
-*注册信息包括：参赛队伍信息 以及用于 验证结果提交的验证码，验证码需要提醒参赛者保存*    
-*用户协议*
+1. 注册链接：https://y2g4crvu1z6qhoqe.mikecrm.com/tlDdi67
+2. 注册信息包括：参赛队伍名称 参赛队伍介绍 参赛队伍成员介绍（姓名，机构名） 参赛队伍联系邮箱
+3. 注册成功后主办方将往该邮箱发送当前队伍独属的UUID，用于后续结果提交，请妥善保存该UUID，切勿泄露
+
 
 ## 使用条款
 1. 该数据只能用于非商业研究和学术教育
