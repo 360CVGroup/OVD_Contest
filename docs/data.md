@@ -16,7 +16,7 @@ hosted by 360 AI Institute
 标注数据的示例如下：
 
 
-1. 初赛数据集下载文件为：data_pre_contest.tgz，包括：
+1. 初赛数据集下载文件为：data_pre_contest.tgz和json_pre_contest.tgz，包括：
 
     ./train：训练集对应的图片  
     ./train.json：训练集对应的标注信息，参照coco格式
@@ -46,7 +46,7 @@ hosted by 360 AI Institute
         其中'split'字段用来划分类别，seen代表训练集出现过的base类别，unseen代表测试集中的novel类别
 
     
-2. 决赛数据集下载文件为：data_final_contest.tgz，文件组织形式与初赛相同，在决赛开始后发送到决赛参赛者邮箱
+2. 决赛数据集下载文件为：data_final_contest.tgz和json_final_contest.tgz，文件组织形式与初赛相同，在决赛开始后发送到决赛参赛者邮箱
     
 
 

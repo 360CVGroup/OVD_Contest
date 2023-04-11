@@ -23,7 +23,7 @@ hosted by 360 AI Institute
 
 参赛者将运用OVD相关的方法，对图像中的商品目标进行检测。对于一件商品，我们会给出它的图片以及bbox作为训练数据。
 
-目标类别有两类：base类和novel类。类别均为中文商品词组。base类的目标提供少量已标注的训练样本，novel类的目标则没有训练样本。评测分别在base类的验证集和novel类的验证集上进行，评测指标以novel和base类的整体mAP计算。
+目标类别有两类：base类和novel类。类别均为中文商品词组。base类的目标提供少量已标注的训练样本，novel类的目标则没有训练样本。评测分别在base类的测试集和novel类的测试集上进行，评测指标为novel和base类的mAP@50，竞赛按照novel和base类别的整体mAP@50排序。
 
 <!-- 注：初赛和复赛使用的base及novel类别均没有重复。 -->
 
