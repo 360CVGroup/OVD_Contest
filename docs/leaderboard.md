@@ -18,4 +18,4 @@ hosted by 360 AI Institute
 
 ---
 ## 社区讨论和答疑
-Please use the [Issues](https://github.com/360CVGroup/OVD_Contest/issues) section for discussions.
+如有比赛相关问题，可在 https://github.com/360CVGroup/OVD_Contest/issues 进行提问讨论
