@@ -25,6 +25,7 @@ hosted by 360 AI Institute
 
 ## 参赛注册
 注册链接：https://y2g4crvu1z6qhoqe.mikecrm.com/tlDdi67
+
 注册信息包括：参赛队伍名称 参赛队伍介绍 参赛队伍成员介绍(名称，来自机构) 参赛队伍联系邮箱，注册成功后主办方将往该邮箱发送当前队伍独属的UUID，用于后续结果提交，请妥善保存该UUID，切勿泄露 
 *用户协议*
 
