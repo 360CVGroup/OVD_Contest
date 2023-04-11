@@ -4,12 +4,14 @@ hosted by 360 AI Institute
 
 ---
 ## Leaderboard
-*updated every week*
+每日更新
 
 ---
 ## 结果上传
-*S3 post link*     
-*提交的数据格式说明及校验脚本*(*.json)
+注：提交文件限制为zip格式，zip文件内仅包含json文件，单个UUID每日提交上限为5次。用户上传后，次日会以邮件形式告知结果
+
+点击该按钮    [上传](http://123.56.244.211/file/upload3/)
+<!-- *提交的数据格式说明及校验脚本*(*.json) -->
 
 
 ---
@@ -18,4 +20,4 @@ hosted by 360 AI Institute
 
 ---
 ## 社区讨论和答疑
-如有比赛相关问题，可在 https://github.com/360CVGroup/OVD_Contest/issues 进行提问讨论
+如有比赛相关问题，可在 [Issues](https://github.com/360CVGroup/OVD_Contest/issues) 进行提问讨论
