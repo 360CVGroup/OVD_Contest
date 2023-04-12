@@ -16,7 +16,8 @@ hosted by 360 AI Institute
 开放词集目标检测有望成为未来目标检测算法开发的新范式。
 
 <!-- *加入示意图/框图* -->
-<img src="detection.png" alt= “detection” width="1143" height="">
+<!-- <img src="detection1.png" alt= “detection1” width="612" height=""> -->
+<img src="detection2.png" alt= “detection2” width="" height="">
 
 ---
 ## 任务设置
@@ -58,7 +59,7 @@ hosted by 360 AI Institute
 
 1. 参赛者可以自由组队，每队不限人数
 2. 每位参赛者只能参加一只队伍
-3. 初赛和复赛期间，每个队伍单日限制提交5次结果
+3. 初赛和复赛期间，每个队伍单日限制提交2次结果
 <!-- 注册请前往[数据下载页](data.md) -->
 
 
