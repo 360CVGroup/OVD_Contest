@@ -37,7 +37,7 @@ hosted by 360 AI Institute
 * 一等奖：1支参赛队伍，奖金3万元
 * 二等奖：2支参赛队伍，奖金各1万元
 * 三等奖：3支参赛队伍，奖金各5千元     
-* 决赛获胜队伍将在[ICIG2013大会](http://icig2023.csig.org.cn/)<img src="icig2013.png" alt= “360ai” width="180" height="40">上进行方案分享演讲
+* 决赛获胜队伍将在[ICIG2023大会](http://icig2023.csig.org.cn/)<img src="icig2013.png" alt= “360ai” width="180" height="40">上进行方案分享演讲
 
 
 ---
