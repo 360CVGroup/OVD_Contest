@@ -7,6 +7,10 @@ hosted by 360 AI Institute
 ## Leaderboard
 每日更新
 
+| 排行 | 组织 | 模型 | novel | base | all |
+| :----- | :----- | :----- | :----- | :----- | :----- |
+|  1 | 360AICVTEST | CV_MODEL_TEST | 0.0 | 0.0 | 0.01 |   
+
 ---
 ## 结果上传
 注：提交文件限制为zip格式，zip文件内仅包含json文件，单个UUID每日提交上限为2次。用户上传后，次日会以邮件形式告知结果
